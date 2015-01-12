@@ -27,7 +27,7 @@ do
 	echo "[*] Intruduce la ruta completa del lector de tarjetas SD (/dev/mmcblk0)"
 	read ruta_sd
 done
-
+rm -rf downloads/*
 mkdir downloads/
 cd downloads/
 echo "[*] Descargando todas las partes de la imagen de Raspbian-RT del repositorio... "
