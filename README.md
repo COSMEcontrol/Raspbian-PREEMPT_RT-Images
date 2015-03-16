@@ -1,3 +1,7 @@
+RaspbianRT-Images
+=================
+Download and copy the image of RaspbianRT into a device.
+
 RaspbianRT
 =================
 Patch Raspbian OS with official Linux Real Time patches, compile and run into Raspberry PI.
@@ -10,7 +14,7 @@ Requirements
 
 Usage
 =====
-Download and copy the image of Raspbian ready for use:
+Download and copy the image of RaspbianRT ready for use:
 
 ```groovy
   sudo ./copyImage.sh
@@ -20,4 +24,4 @@ Example:
  ```groovy
   /dev/mmcblk0
 ```
- 
+ Wait for the decompressor 7zip and dd tool.
