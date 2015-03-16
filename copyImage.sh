@@ -3,7 +3,7 @@
 #### Alberto Azuara
 #### Versión 1.0
 #### 12/01/15
-#### Descarga y copia imagen de Raspbian-RT del repositorio
+#### Download and copy image Raspbian-RT
 #####################################################
 
 URL_IMAGE_PART1="https://github.com/COSMEcontrol/RaspbianRT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.001"
@@ -12,40 +12,40 @@ URL_IMAGE_PART3="https://github.com/COSMEcontrol/RaspbianRT-Images/releases/down
 URL_IMAGE_PART4="https://github.com/COSMEcontrol/RaspbianRT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.004"
 ruta_sd=""
 
-#comprobar si soy root
+#check if I root
 if [[ $EUID -ne 0 ]]; then
-	echo -n "[Error] Este script debe ser ejecutado por el usuario root. "
+	echo -n "[Error] This script must be run by the root user. "
 	exit 1
 fi
 
-echo "[*] Comprobando utilidades de compilacion... "
-type 7z > /dev/null 2>&1 || { echo >&2 "[!] Instalar \"descompresor 7z (apt-get install p7zip-full)\""; read -p "Press [Enter] to continue..."; exit 1; }
+echo "[*] Checking utilities compilation ... "
+type 7z > /dev/null 2>&1 || { echo >&2 "[!] Install \"decompressor 7z (apt-get install p7zip-full)\""; read -p "Press [Enter] to continue..."; exit 1; }
 
 
 while [ -f $ruta_sd ]
 do
-	echo "[*] Intruduce la ruta completa del lector de tarjetas SD (/dev/mmcblk0)"
+	echo "[*] Enter the full path of SD card reader (/dev/mmcblk0)"
 	read ruta_sd
 done
 rm -rf downloads/*
 mkdir downloads/
 cd downloads/
-echo "[*] Descargando todas las partes de la imagen de Raspbian-RT del repositorio... "
+echo "[*] Downloading all parts of the image repository Raspbian-RT ... "
 wget $URL_IMAGE_PART1
 wget $URL_IMAGE_PART2
 wget $URL_IMAGE_PART3
 wget $URL_IMAGE_PART4
 echo "ok! "
 
-echo -n "[*] Descomprimiendo y uniendo las partes de la imagen de Raspbian-RT... "
+echo -n "[*] Decompressing and joining the parts of the RaspbianRT...  "
 7z x Raspbian_3.12.31_PREEMPT_RT.img.7z.001
 echo "ok! "
 
-echo -n "[*] Copiando la imagen a la tarjeta SD... "
+echo -n "[*] Copying the image into device ... "
 dd if=Raspbian_3.12.31_PREEMPT_RT.img  of=$ruta_sd
 echo "ok! "
 
-echo -n "[*] Eliminando elementos innecesarios..."
+echo -n "[*] Removing unnecessary items ..."
 rm Raspbian_3.12.31_PREEMPT_RT.img.7z.001
 rm Raspbian_3.12.31_PREEMPT_RT.img.7z.002
 rm Raspbian_3.12.31_PREEMPT_RT.img.7z.003
@@ -53,6 +53,6 @@ rm Raspbian_3.12.31_PREEMPT_RT.img.7z.004
 rm Raspbian_3.12.31_PREEMPT_RT.img
 cd ..
 echo "ok! "
-echo "[*] Listo!"
+echo "[*] Ready!"
 
 exit 0
