@@ -1,12 +1,12 @@
-RaspbianRT-Images
+Raspbian-PREEMPT_RT-Images
 =================
-Download and copy the image of RaspbianRT into a device.
+Download and copy the image of Raspbian-PREEMPT_RT into a device.
 
-RaspbianRT
+Raspbian-PREEMPT_RT
 =================
-Patch Raspbian OS with official Linux Real Time patches, compile and run into Raspberry PI.
+Patch Raspbian OS with official PREEMPT_RT patches, compile and run into Raspberry PI.
 
-[More information](https://github.com/COSMEcontrol/RaspbianRT)
+[More information](https://github.com/COSMEcontrol/Raspbian-PREEMPT_RT)
 
 Requirements
 ==================
@@ -14,12 +14,12 @@ Requirements
 
 Usage
 =====
-Download and copy the image of RaspbianRT ready for use:
+Download and copy the image of Raspbian-PREEMPT_RT ready for use:
 
 ```groovy
   sudo ./copyImage.sh
 ```
-Specify the route where will be copied image RaspbianRT
+Specify the route where will be copied image Raspbian-PREEMPT_RT
 Example:
  ```groovy
   /dev/mmcblk0
