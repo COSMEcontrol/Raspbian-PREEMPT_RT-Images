@@ -4,13 +4,13 @@
 #### Alfonso Blesa
 #### Versión 1.0
 #### 12/01/15
-#### Download and copy image Raspbian-RT
+#### Download and copy image Raspbian-PREEMPT_RT
 #####################################################
 
-URL_IMAGE_PART1="https://github.com/COSMEcontrol/RaspbianRT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.001"
-URL_IMAGE_PART2="https://github.com/COSMEcontrol/RaspbianRT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.002"
-URL_IMAGE_PART3="https://github.com/COSMEcontrol/RaspbianRT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.003"
-URL_IMAGE_PART4="https://github.com/COSMEcontrol/RaspbianRT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.004"
+URL_IMAGE_PART1="https://github.com/COSMEcontrol/Raspbian-PREEMPT_RT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.001"
+URL_IMAGE_PART2="https://github.com/COSMEcontrol/Raspbian-PREEMPT_RT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.002"
+URL_IMAGE_PART3="https://github.com/COSMEcontrol/Raspbian-PREEMPT_RT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.003"
+URL_IMAGE_PART4="https://github.com/COSMEcontrol/Raspbian-PREEMPT_RT-Images/releases/download/3.12.31/Raspbian_3.12.31_PREEMPT_RT.img.7z.004"
 ruta_sd=""
 
 #check if I root
