@@ -1,6 +1,7 @@
 #!/bin/bash
 #####################################################
 #### Alberto Azuara
+#### Alfonso Blesa
 #### Versión 1.0
 #### 12/01/15
 #### Download and copy image Raspbian-RT
